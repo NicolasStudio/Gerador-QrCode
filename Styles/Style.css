@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700; 1.900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #34db7a;
+}
+
+.container{
+    background-color: #fff;
+    height: 260px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.container.active{
+    height: 500px;
+}
+
+#qr-header{
+    text-align: center;
+}
+
+#qr-header h1{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+
+}
+
+#qr-header p{
+    color: #444;
+    font-size: 0.9rem;
+}
+
+#qr-form{
+    margin: 20px 15px;
+}
+
+#qr-form input, #qr-form button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+#qr-form input{
+    border: 1px solid #777;
+    padding: 10px 15px;
+}
+
+#qr-form button{
+    background-color: #086824;
+    border: 1px solid #086824;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#qr-form button:hover, #qr-form button:active{
+    border: 1px solid #086824;
+    background-color: #fff;
+    color: #086824;
+    font-weight: 600;
+    transition: 400ms;
+}
+
+#qr-form button:active{
+    font-size: 1.1rem;
+}
+
+#qr-code{
+    display: flex;
+    opacity: 0;
+    border: 1p solid #ccc;
+    padding: 30px 0;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.container.active #qr-code{
+    opacity: 1;
+}
